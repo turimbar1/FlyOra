@@ -1,0 +1,142 @@
+CREATE TABLE CONTACTS
+   (    "CONTACT_ID" NUMBER(6,0),
+    "FIRST_NAME" VARCHAR2(20 BYTE),
+    "LAST_NAME" VARCHAR2(25 BYTE),
+    "ADDRESS1" VARCHAR2(30 BYTE),
+    "ADDRESS2" VARCHAR2(30 BYTE),
+    "ADDRESS3" VARCHAR2(30 BYTE),
+    "ZIPCODE" VARCHAR2(10 BYTE),
+    "EMAIL" VARCHAR2(24 BYTE),
+    "PHONE_NUMBER" VARCHAR2(20 BYTE),
+    CONSTRAINT contacts_pk PRIMARY KEY (contact_id)
+   ) SEGMENT CREATION IMMEDIATE
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "SYSTEM" ;
+ /
+   COMMENT ON COLUMN CONTACTS."CONTACT_ID" IS 'Contact ID';
+   COMMENT ON COLUMN CONTACTS."FIRST_NAME" IS 'First name';
+   COMMENT ON COLUMN CONTACTS."LAST_NAME" IS 'Last name';
+-- INSERTING into CONTACTS
+/
+--SET DEFINE OFF;
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (1,'Clarinda','Nolette','66 Burroughs Lawn','Downing','WI','54734','aucop96@oxalic.com','4051729305');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (2,'Bernd','Sebree','67 Krishka Ave.','Rockford','IL','61109','jbm_zs@delight.com','9251596046');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (3,'Arlene','Hakimi','707A Pahute St.','Minneapolis','MN','55449','asrfn_ctgk@viaduct.com','5716681378');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (4,'Thaddeus','Politowski','84 Kinnins Ave.','Moore','ID','83255','mvrw_udl@enfoldings.net','4096479314');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (5,'Githa','Tumaneng','19 Judum Court','Port Leyden','NY','13433','wzycye56@advection.net','8157185729');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (6,'Hyacinthe','Madnick','263 Parmer St.','Bridgeport','CT','06607','rhwott67@skedaddled.com','2094153460');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (7,'Ignace','Wojick','15 Large Rd.','Herndon','VA','20170','lmeo85@bioactive.com','9037255691');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (8,'Aniruddha','Macmullan','56 Banoak Rd.','Brookfield','WI','53005','eofo.rlev@moralize.com','8705315521');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (9,'Verena','Skender','62 Pompei St.','Fort Lauderdale','FL','33313','vbk_xv@onanism.com','9124745117');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (10,'Barbra','Proch','95 Gier Rd.','Charleston','WV','25336','uhbkndk@watercolors.com','4506502197');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (11,'Sherley','Campton','90 Haveteur Rd.','Washington','DC','20375','jnnovrl38@precisely.com','2522213176');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (12,'Heath','Mordan','894A Spoonhill Rd.','Bay City','MI','48707','ssnexfusn@axletrees.com','8328153749');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (13,'Ismail','Rippstein','60 Belmora St.','Belchertown','MA','01007','pide73@hackly.com','3869785224');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (14,'Lucio','Bodnar','836A Maganser St.','Rochdale','MA','01542','abl.kfm@arteriogram.com','4106445192');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (15,'Lianne','Talburt','50 Cobtail Lawn','Great Neck','NY','11024','fjav_sbp@lifeless.com','5629817637');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (16,'Seb','Dibenedetto','94 Methvin Rd.','Baton Rouge','LA','70823','psptrqn62@waken.com','9151457656');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (17,'Verity','Lorna','350 Browdis Ave.','Stanley','ID','83278','tosuqh70@quintal.com','2691708730');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (18,'Kaitlynn','Tamaro','874 Duitman Lane','Centreville','MS','39631','xhdhgd@plasmogamy.biz','5742988070');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (19,'Ridge','Samiento','669 Ridpath Ave.','Grant City','MO','64456','tpyc.msi@rejudge.com','5301776405');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (20,'Ashlee','Pechin','72 Fagala Gate','Breezewood','PA','15533','pzjh_xrqm@treillage.com','2564666848');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (21,'Hipolito','Felber','36 Casheen Cottages','Clarksville','AR','72830','hkgfai@afflicted.biz','9151211181');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (22,'Jazmin','Demshar','63 Windrock Rd.','Kopperston','WV','24854','nsej.mcp@reluctated.com','7402055268');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (23,'Colette','Albert','562 Sprngs Rd.','Miami','FL','33127','eojkk1@prizer.com','3412649023');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (24,'Eddy','Traugott','28 Lunan Ave.','Traverse City','MI','49685','pqqu@deceives.com','8309754360');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (25,'Rock','Postuci','295A Missman St.','Citra','FL','32113','swlk44@mediocrity.com','2277911815');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (26,'Alonzo','Henegan','87 Renville Ave.','Harlingen','TX','78550','wuav24@brigantines.com','8076405490');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (27,'Garrick','Krivanec','33 Neidt Ct.','Killington','VT','05751','dlfsb96@sapsuckers.com','7724694286');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (28,'Bell','Koetje','56 Stonby St.','Lind','WA','99341','ijrvwyu@didot.com','4079915811');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (29,'Divina','Wesner','53 Permon St.','Nampa','ID','83653','vqqtaid91@hyson.com','5673019223');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (30,'Lauro','Romesburg','85 Welsco Bank','Cedar Rapids','IA','52407','elnr_grz@clavichords.com','7646647386');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (31,'Lurdes','Drullard','95 Tarrant Villas','Talihina','OK','74571','way_bj@manginess.com','8474486123');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (32,'Etha','Atcheson','33 Ryser Rd.','Seattle','WA','98112','xat.uwg@mannosyl.com','5612356236');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (33,'Neil','Freguson','49 Totnes Ave.','Hesston','KS','67062','sfkyhf@lytically.net','4034348768');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (34,'Suraj','Suggett','21 Steene Rd.','Richardson','TX','75083','eqhv93@spectroscopes.com','8647888812');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (35,'Nawal','Grubba','16 Acres Ave.','Sacramento','CA','95864','zuro.joyu@postals.com','5867211936');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (36,'Winnifred','Viator','23 Tolo Cr.','Wagoner','OK','74467','yxlhgsq59@slouching.com','7603825067');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (37,'Ernie','Kirtdoll','310 Nordway St.','Lanse','PA','16849','chjc.yir@clubbier.com','2544705364');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (38,'Cyrilla','Leith','81B Sott Rd.','Dennis','TX','76439','kzlzd3@digitized.com','4136899972');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (39,'Trista','Rumbach','10 Mepham Ave.','Great Neck','NY','11023','wbyf94@neoplastic.com','5864461281');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (40,'Siegfried','Gachupin','722 Reicher Rd.','Solon','ME','04979','pnnrs6@myrtle.com','6466709037');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (41,'Kirby','Russer','85 Abco Gdns.','Raymond','KS','67573','ljhkl_tcqf@subring.com','3173035996');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (42,'Hani','Bruck','439B Speak St.','Monterey','MA','01245','ymwwprenlt@walking.com','8305636276');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (43,'Elijah','Pierzchala','32 Burries Ave.','Paris','KY','40362','npcyizxkdl@bilingual.com','6089846569');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (44,'Crescenzo','Binienda','47 Whitewater Rd.','Chicago','IL','60612','cagz_lriv@unbolts.biz','7096483067');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (45,'Larrie','Asante','927 Kollmann Ave.','Laguna Hills','CA','92653','bbp@woodenness.com','6045516801');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (46,'Leon','Pfautz','59 Shugerman Lane','Perkasie','PA','18944','btl_av@dilated.net','5398813710');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (47,'Bettina','Rosener','30 Hipass Ave.','Meridian','MS','39302','mue.dpi@meadowy.com','5718089192');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (48,'Werner','Weinert','19 Wanner Ave.','Eureka','NV','89316','zfj_hy@prisms.com','3457842943');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (49,'Jeri','Hardesty','47 Eble St.','Granite Falls','WA','98252','bqgx82@telamon.com','6576427586');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (50,'Hafsah','Egelston','32 Burkoff Rd.','Ashland','LA','71002','qwsae.qscp@mortuary.com','6305807883');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (51,'Liberatore','Klingenberger','22 Glasglow Villas','Williamsburg','MA','01096','fwvqa41@sacrist.com','9599637628');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (52,'Alfonsina','Mayotte','95 Burgman Rd.','Irving','TX','75061','cjp.pwy@savouriest.com','4307315862');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (53,'Myron','Whittman','92 Dermont Ave.','Fair Lawn','NJ','07410','jry_ye@trillers.com','6136982582');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (54,'Emmeline','Bischof','66 Tatrice St.','Elm City','NC','27822','agtwlvqu@aphorize.com','8587123965');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (55,'Stanley','Pentilow','34 Keyes Rd.','Sapello','NM','87745','uqxq@subjacently.com','3862678215');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (56,'Nick','Jellinek','87 Celena Rd.','Ponce De Leon','FL','32455','mdlh_run@chaster.com','4695182385');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (57,'Terrell','Schnabel','8 Panader Passage','Austell','GA','30106','mjbpxx@insolence.com','7798085639');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (58,'Robby','Kiddle','62 Bridson St.','Roselle','NJ','07203','aziq_vvh@coifed.com','9751498617');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (59,'Brandi','Zike','47 Tesa Ave.','Clutier','IA','52217','jzwfi_eupx@nictitate.com','4451885184');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (60,'Gabe','Liverani','629 Prospectus St.','Lawrenceville','GA','30046','igwye@nanograms.com','8689609206');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (61,'Ayla','Benvenuti','31 Barsalugia Rd.','Franklin','MA','02038','btzmknb@hibachi.com','8683085044');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (62,'Friede','Laura','16 Pauba Alley','Sunderland','MD','20689','qgu@phlegm.com','6029616848');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (63,'Rogelio','Mcintrye','41 Goulds Ave.','Lansing','KS','66043','rsmfhdwu@confuting.com','2566988190');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (64,'Hamid','Beyale','63 Rivell Rd.','Humble','TX','77345','ehl_eth@mumbo.com','2742652833');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (65,'Jessenia','Kolodziej','79 Kapele St.','Somerset','IN','46984','yrwz@proliferated.com','6619201962');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (66,'Leonor','Branaman','83 Nihan St.','Heathsville','VA','22473','zlttjr@jockeys.com','5186656170');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (67,'Nanda','Gaunce','3 Walleck Rd.','Port Bolivar','TX','77650','szk@diffusional.net','6609712234');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (68,'Konrad','Sypult','21 Crumel St.','Seven Mile Ford','VA','24373','xmzonqi76@oligomers.biz','3802977724');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (69,'Tacito','Raygoza','29 Maccool Yard','Quinebaug','CT','06262','clxfag@alkalization.com','9068379144');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (70,'Louann','Vogt','97 Erdoni St.','Jasper','FL','32052','aupw_wsr@sterilizes.com','2409876435');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (71,'Lashonda','Rothell','49 Wickenden Ave.','Ormsby','MN','56162','pqlawd29@auxinically.com','4049757379');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (72,'Piedad','Angileri','28 Elora Ave.','Burlington','NJ','08016','pvtd@trivializing.com','9036965045');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (73,'Lavera','Brunkow','86 Palae Ave.','Jacksonville','FL','32228','vvr_dj@stardusts.com','3059803056');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (74,'Timothee','Knepp','79 Airflight Road','Grand Ridge','IL','61325','zxiwpq@worldbeater.com','4707858202');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (75,'Kiara','Tsuda','503 Extention Ave.','Toledo','OH','43613','lrnoaqb@spores.com','4303236431');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (76,'Alessia','Clonts','71 Filos Ave.','Harrison','AR','72602','zslws73@seeings.com','7856432278');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (77,'Cristina','Leuenberger','41 Steambrook Rd.','Lubbock','TX','79424','embvd_rpbo@fairgoer.net','9074615229');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (78,'Yasmin','Varoz','47 Tecca St.','Creighton','NE','68729','vsyqha61@assailants.com','8129319887');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (79,'Nasir','Swiger','74 Baushke St.','Sioux Falls','SD','57194','xkg.jm@hedgerows.com','7633481108');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (80,'Digby','Amiri','3 Shadowvale Gate','Austin','PA','16720','mnsja68@mechanician.com','7876432236');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (81,'Tolly','Mulhall','28 Fourmtes Rd.','Wallingford','KY','41093','fzmzyyd@cheekful.com','3236427104');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (82,'Gladwyn','Lindley','10 Peculiar Ave.','James City','PA','16734','glevmd1@heathier.com','6031262894');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (83,'Mahendra','Bracamonte','93 Maoi Mews','Hanover','MA','02339','ufqz_wos@incubating.com','7198743247');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (84,'Sefu','Polhamus','48 Macclesfield St.','Pittsburgh','PA','15244','saqsuu@canonic.biz','4587296845');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (85,'Winfried','Flinders','13 Middlemore Rd.','Keota','IA','52248','dsiyp95@hallowed.com','4433352866');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (86,'Linford','Pacek','535 Riezen Wall','Karluk','AK','99608','sggkg@specialty.com','3023009744');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (87,'Loyce','Benzie','88 Larmer St.','Lake Elsinore','CA','92531','aqbqe@midwing.com','8079422942');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (88,'Husam','Devino','54 Arrowsmith St.','Mount Vernon','OH','43050','jlskkq87@missourians.com','2832356266');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (89,'Adolphus','Craawford','84 Gosta St.','Penasco','NM','87553','fxvl.izph@mosquitos.com','7742661434');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (90,'Zahrah','Unzicker','39 Stieferman Bank','Camp Grove','IL','61424','dqeqqu97@quantize.com','5515394480');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (91,'Arlen','Cassata','154 Damery St.','Westville','IN','46391','skwooib46@jauntiest.com','2502594370');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (92,'Jonah','Agan','92 Lansbrook Rd.','Austerlitz','NY','12017','efbgq@venalness.org','2704662431');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (93,'Baptist','Lessley','696A Welka St.','Perkins','WV','26634','aaor.gerv@yangtze.com','5092432971');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (94,'Lovel','Dowda','47 Tearall Ave.','Iowa Park','TX','76367','mnuer.kkfl@staccatos.net','9078347689');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (95,'Renato','Drzewicki','52 Pharr Rd.','Portland','ME','04112','seq.ox@rebids.biz','8481737311');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (96,'Daphne','Engelson','17 Foutune Rd.','Trufant','MI','49347','ajw@relicenses.com','8145896968');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (97,'Lexie','Llarena','23 Kauamea Ave.','Lake Geneva','FL','32160','ppufghy@thuddingly.com','2174931481');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (98,'Silvester','Mova','94 Greywall Street','Reserve','MT','59258','ufwf_buoj@shortish.com','9196027001');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (99,'Nolan','Mickus','87 Killamey Parade','Spring Mills','PA','16875','pnoc.cnx@refilter.com','2519825071');
+Insert into CONTACTS (CONTACT_ID,FIRST_NAME,LAST_NAME,ADDRESS1,ADDRESS2,ADDRESS3,ZIPCODE,EMAIL,PHONE_NUMBER) values (100,'Winter','Vandiest','64 Tashota St.','Edgar','NE','68935','shel30@miauled.com','3091548595');
+COMMIT;
+--------------------------------------------------------
+--  Constraints for Table CONTACTS
+--------------------------------------------------------
+ 
+  ALTER TABLE CONTACTS MODIFY ("EMAIL" NOT NULL ENABLE);
+  ALTER TABLE CONTACTS MODIFY ("LAST_NAME" NOT NULL ENABLE);
+  ALTER TABLE CONTACTS MODIFY ("CONTACT_ID" NOT NULL ENABLE);
+ 
+ 
+ 
+CREATE OR REPLACE PROCEDURE GET_CONTACTS( p_rc OUT SYS_REFCURSOR )
+AS
+BEGIN
+  OPEN p_rc FOR
+  SELECT * FROM CONTACTS;
+  -- SELECT FIRST_NAME, LAST_NAME, EMAIL FROM CONTACTS;
+END;
+/

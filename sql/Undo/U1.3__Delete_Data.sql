@@ -1,0 +1,234 @@
+--
+-- Run this script on: (these schemas will be modified)
+--
+-- localhost(dev1_shadow).HR (NineteenC)
+--
+-- to synchronize it with:
+--
+-- localhost(dev2_shadow).HR (NineteenC)
+--
+-- You are recommended to back up your database before running this script.
+--
+-- Script created by Data Compare for Oracle, version 5.7.9.293 from Red Gate Software Ltd at 03/11/2020 07:03:43.
+--
+/* 
+
+DECLARE
+  null_value CHAR(1) := NULL;
+  statement1 CHAR(83);
+  statement2 CHAR(77);
+  statement3 CHAR(59);
+  statement4 CHAR(79);
+  statement5 CHAR(57);
+BEGIN
+  statement1 := 'UPDATE hr.job_history SET department_id=:0 WHERE employee_id=:w0 AND start_date=:w1';
+  EXECUTE IMMEDIATE statement1 USING null_value, 101, TO_DATE('21/SEP/1997AD 00:00:00','DD/MON/YYYYBC HH24:MI:SS','nls_date_language=ENGLISH');
+  EXECUTE IMMEDIATE statement1 USING null_value, 101, TO_DATE('28/OCT/2001AD 00:00:00','DD/MON/YYYYBC HH24:MI:SS','nls_date_language=ENGLISH');
+  EXECUTE IMMEDIATE statement1 USING null_value, 102, TO_DATE('13/JAN/2001AD 00:00:00','DD/MON/YYYYBC HH24:MI:SS','nls_date_language=ENGLISH');
+  EXECUTE IMMEDIATE statement1 USING null_value, 114, TO_DATE('24/MAR/2006AD 00:00:00','DD/MON/YYYYBC HH24:MI:SS','nls_date_language=ENGLISH');
+  EXECUTE IMMEDIATE statement1 USING null_value, 122, TO_DATE('01/JAN/2007AD 00:00:00','DD/MON/YYYYBC HH24:MI:SS','nls_date_language=ENGLISH');
+  EXECUTE IMMEDIATE statement1 USING null_value, 176, TO_DATE('24/MAR/2006AD 00:00:00','DD/MON/YYYYBC HH24:MI:SS','nls_date_language=ENGLISH');
+  EXECUTE IMMEDIATE statement1 USING null_value, 176, TO_DATE('01/JAN/2007AD 00:00:00','DD/MON/YYYYBC HH24:MI:SS','nls_date_language=ENGLISH');
+  EXECUTE IMMEDIATE statement1 USING null_value, 200, TO_DATE('17/SEP/1995AD 00:00:00','DD/MON/YYYYBC HH24:MI:SS','nls_date_language=ENGLISH');
+  EXECUTE IMMEDIATE statement1 USING null_value, 200, TO_DATE('01/JUL/2002AD 00:00:00','DD/MON/YYYYBC HH24:MI:SS','nls_date_language=ENGLISH');
+  EXECUTE IMMEDIATE statement1 USING null_value, 201, TO_DATE('17/FEB/2004AD 00:00:00','DD/MON/YYYYBC HH24:MI:SS','nls_date_language=ENGLISH');
+  statement2 := 'UPDATE hr.employees SET manager_id=:0, department_id=:1 WHERE employee_id=:w0';
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 100;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 101;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 102;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 103;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 104;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 105;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 106;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 107;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 108;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 109;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 110;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 111;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 112;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 113;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 114;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 115;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 116;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 117;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 118;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 119;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 120;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 121;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 122;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 123;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 124;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 125;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 126;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 127;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 128;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 129;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 130;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 131;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 132;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 133;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 134;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 135;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 136;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 137;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 138;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 139;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 140;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 141;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 142;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 143;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 144;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 145;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 146;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 147;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 148;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 149;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 150;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 151;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 152;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 153;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 154;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 155;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 156;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 157;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 158;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 159;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 160;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 161;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 162;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 163;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 164;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 165;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 166;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 167;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 168;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 169;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 170;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 171;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 172;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 173;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 174;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 175;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 176;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 177;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 178;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 179;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 180;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 181;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 182;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 183;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 184;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 185;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 186;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 187;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 188;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 189;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 190;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 191;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 192;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 193;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 194;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 195;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 196;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 197;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 198;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 199;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 200;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 201;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 202;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 203;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 204;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 205;
+  EXECUTE IMMEDIATE statement2 USING null_value, null_value, 206;
+  statement3 := 'UPDATE hr.locations SET country_id=:0 WHERE location_id=:w0';
+  EXECUTE IMMEDIATE statement3 USING null_value, 1000;
+  EXECUTE IMMEDIATE statement3 USING null_value, 1100;
+  EXECUTE IMMEDIATE statement3 USING null_value, 1200;
+  EXECUTE IMMEDIATE statement3 USING null_value, 1300;
+  EXECUTE IMMEDIATE statement3 USING null_value, 1400;
+  EXECUTE IMMEDIATE statement3 USING null_value, 1500;
+  EXECUTE IMMEDIATE statement3 USING null_value, 1600;
+  EXECUTE IMMEDIATE statement3 USING null_value, 1700;
+  EXECUTE IMMEDIATE statement3 USING null_value, 1800;
+  EXECUTE IMMEDIATE statement3 USING null_value, 1900;
+  EXECUTE IMMEDIATE statement3 USING null_value, 2000;
+  EXECUTE IMMEDIATE statement3 USING null_value, 2100;
+  EXECUTE IMMEDIATE statement3 USING null_value, 2200;
+  EXECUTE IMMEDIATE statement3 USING null_value, 2300;
+  EXECUTE IMMEDIATE statement3 USING null_value, 2400;
+  EXECUTE IMMEDIATE statement3 USING null_value, 2500;
+  EXECUTE IMMEDIATE statement3 USING null_value, 2600;
+  EXECUTE IMMEDIATE statement3 USING null_value, 2700;
+  EXECUTE IMMEDIATE statement3 USING null_value, 2800;
+  EXECUTE IMMEDIATE statement3 USING null_value, 2900;
+  EXECUTE IMMEDIATE statement3 USING null_value, 3000;
+  EXECUTE IMMEDIATE statement3 USING null_value, 3100;
+  EXECUTE IMMEDIATE statement3 USING null_value, 3200;
+  statement4 := 'UPDATE hr.departments SET manager_id=:0, location_id=:1 WHERE department_id=:w0';
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 10;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 20;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 30;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 40;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 50;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 60;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 70;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 80;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 90;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 100;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 110;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 120;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 130;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 140;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 150;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 160;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 170;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 180;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 190;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 200;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 210;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 220;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 230;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 240;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 250;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 260;
+  EXECUTE IMMEDIATE statement4 USING null_value, null_value, 270;
+  statement5 := 'UPDATE hr.countries SET region_id=:0 WHERE country_id=:w0';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'AR';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'AU';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'BE';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'BR';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'CA';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'CH';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'CN';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'DE';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'DK';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'EG';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'FR';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'IL';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'IN';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'IT';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'JP';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'KW';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'ML';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'MX';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'NG';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'NL';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'SG';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'UK';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'US';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'ZM';
+  EXECUTE IMMEDIATE statement5 USING null_value, 'ZW';
+END;
+ DELETE FROM hr.employees;
+ DELETE FROM hr.regions;
+ DELETE FROM hr.locations;
+DELETE FROM hr.jobs;
+DELETE FROM hr.departments;
+DELETE FROM hr.countries;
+*/
+/
+DELETE FROM hr.job_history;
+
+
+
+COMMIT;
